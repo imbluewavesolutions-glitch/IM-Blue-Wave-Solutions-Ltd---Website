@@ -1,1 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IM Blue Wave Solutions Ltd — Business Solutions &amp; Consulting</title>
+<meta name="description" content="IM Blue Wave Solutions Ltd provides business solutions and business consulting from Nicosia, Cyprus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2545; --ink:#13233A; --muted:#4A5B73; --blue:#1A56C4; --sky:#5FB4FF;
+  --ground:#F5F8FC; --white:#FFFFFF; --line:#DDE5F0; --field:#B9C7DA; --tint:#E7F0FD;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--ground);line-height:1.6}
+h1,h2,h3{font-family:Sora,sans-serif;color:var(--navy);margin:0;line-height:1.2}
+p{margin:0}
+a{color:var(--blue)}a:hover{color:var(--navy)}
+.container{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.section{padding-top:96px;padding-bottom:96px}
+.section-head{display:flex;flex-direction:column;gap:12px;max-width:680px;margin-bottom:48px}
+.section-head h2,.h2{font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700}
+.lead{font-size:17px;color:var(--muted)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:8px}
+.btn-light{background:var(--white);color:var(--navy)}
+.btn-light:hover{color:var(--navy);background:#EAF2FF}
+.btn-ghost{color:var(--white);border:1px solid #4F6C93;padding:13px 25px}
+.btn-ghost:hover{color:var(--white);background:rgba(255,255,255,.08)}
 
+/* Header */
+.site-header{background:var(--white);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-family:Sora,sans-serif;font-weight:700;font-size:18px}
+.brand-sub{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.main-nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;font-weight:500}
+.main-nav a{text-decoration:none;color:var(--ink);padding:10px 0}
+.main-nav a:hover{color:var(--blue)}
+.main-nav a.nav-cta{color:var(--white);background:var(--blue);padding:10px 20px;border-radius:8px}
+.main-nav a.nav-cta:hover{background:var(--navy);color:var(--white)}
+
+/* Hero */
+.hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+.hero-inner{padding-top:112px;padding-bottom:136px;display:flex;flex-direction:column;gap:28px;position:relative}
+.hero .eyebrow{color:#8CC8FF}
+.hero h1{color:var(--white);font-weight:700;font-size:clamp(2.4rem,5vw,4rem);line-height:1.1;max-width:820px}
+.hero p{font-size:19px;color:#C9D6E8;max-width:640px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.hero-wave{position:absolute;left:0;bottom:-1px;width:100%;height:90px;display:block}
+
+/* Cards */
+.grid-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-weight:600;font-size:20px}
+.card p{font-size:15.5px;color:var(--muted)}
+.icon-box{width:48px;height:48px;border-radius:12px;background:var(--tint);color:var(--blue);display:flex;align-items:center;justify-content:center}
+
+/* Approach */
+.band{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.steps li{display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:3px solid var(--blue)}
+.step-num{font-family:Sora,sans-serif;font-weight:700;font-size:15px;color:var(--blue)}
+.steps h3{font-weight:600;font-size:20px}
+.steps p{font-size:15.5px;color:var(--muted)}
+
+/* About */
+.about{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
+.about-text{flex:1 1 420px;display:flex;flex-direction:column;gap:16px}
+.values{flex:1 1 380px;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.values li{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+.values svg{flex:none;margin-top:3px}
+.values strong{display:block;font-family:Sora,sans-serif;font-weight:600;font-size:17px;color:var(--navy)}
+.values span{font-size:15px;color:var(--muted)}
+
+/* CTA */
+.cta{background:var(--blue);color:var(--white);border-radius:20px;padding:56px 48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.cta h2{color:var(--white);font-weight:700;font-size:clamp(1.6rem,2.6vw,2.1rem)}
+.cta p{font-size:17px;color:#E3EDFC;margin-top:8px;max-width:640px}
+
+/* Contact */
+.contact{display:flex;flex-wrap:wrap;gap:56px}
+.contact-info{flex:1 1 340px;display:flex;flex-direction:column;gap:16px}
+.contact-list{margin:8px 0 0;display:grid;grid-template-columns:max-content 1fr;gap:10px 20px;font-size:15.5px}
+.contact-list dt{font-weight:600;color:var(--navy)}
+.contact-list dd{margin:0;color:var(--muted)}
+.form-card{flex:1 1 480px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px}
+.contact-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.contact-form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--navy)}
+.contact-form input,.contact-form select,.contact-form textarea{font:inherit;font-weight:400;min-height:44px;padding:10px 12px;border:1px solid var(--field);border-radius:8px;background:var(--white);color:var(--ink)}
+.contact-form textarea{resize:vertical}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{outline:2px solid var(--blue);outline-offset:1px}
+.full{grid-column:1 / -1}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.form-foot span{font-size:13px;color:var(--muted)}
+.btn-primary{min-height:48px;padding:12px 28px;border:none;border-radius:8px;background:var(--blue);color:var(--white);font:inherit;font-weight:600;font-size:16px;cursor:pointer}
+.btn-primary:hover{background:var(--navy)}
+.btn-outline{min-height:44px;padding:10px 20px;border-radius:8px;border:1px solid var(--field);background:var(--white);color:var(--navy);font:inherit;font-weight:600;cursor:pointer;margin-top:8px}
+.thanks{display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding:24px 0}
+.thanks h3{font-weight:600;font-size:22px}
+.thanks p{font-size:16px;color:var(--muted)}
+[hidden]{display:none!important}
+
+/* Footer */
+.site-footer{background:var(--navy);color:#C9D6E8}
+.footer-inner{padding-top:48px;padding-bottom:48px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;font-size:14px}
+.footer-brand{display:flex;flex-direction:column;gap:6px;max-width:420px}
+.footer-brand strong{font-family:Sora,sans-serif;font-weight:700;font-size:17px;color:var(--white)}
+.footer-nav{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:flex-start}
+.footer-nav a{color:var(--white);text-decoration:none}
+.footer-nav a:hover{color:var(--sky)}
+.copyright{flex-basis:100%;padding-top:20px;border-top:1px solid #23406A}
+
+@media (max-width:600px){
+  .section{padding-top:72px;padding-bottom:72px}
+  .hero-inner{padding-top:72px;padding-bottom:110px}
+  .cta{padding:40px 24px}
+  .form-card{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0B2545"/><path d="M7 24c4-6 8-6 12 0s8 6 14 0" fill="none" stroke="#5FB4FF" stroke-width="3" stroke-linecap="round"/><path d="M7 17c4-6 8-6 12 0s8 6 14 0" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="brand-text"><span class="brand-name">IM Blue Wave</span><span class="brand-sub">Solutions Ltd</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="top" class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">Business solutions &amp; consulting</span>
+    <h1>Clear direction for businesses ready to move forward.</h1>
+    <p>IM Blue Wave Solutions helps organisations solve operational challenges, sharpen strategy and put practical solutions in place — from first diagnosis through to implementation.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-light">Book a consultation</a>
+      <a href="#services" class="btn btn-ghost">Explore services</a>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 C240 10 480 10 720 60 S1200 120 1440 50 L1440 120 L0 120 Z" fill="#F5F8FC"/><path d="M0 85 C260 35 500 40 760 80 S1180 110 1440 70" fill="none" stroke="#5FB4FF" stroke-opacity="0.45" stroke-width="2"/></svg>
+</section>
+
+<section id="services" class="container section">
+  <div class="section-head">
+    <span class="eyebrow">What we do</span>
+    <h2>Services built around your business</h2>
+    <p class="lead">Every engagement is shaped to the client's size, sector and goals. Our core areas of work include:</p>
+  </div>
+  <div class="grid-services">
+    <article class="card">
+      <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg></div>
+      <h3>Business Strategy</h3>
+      <p>Defining goals, priorities and the roadmap to reach them, grounded in a clear view of your market and resources.</p>
+    </article>
+    <article class="card">
+      <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></div>
+      <h3>Operations &amp; Processes</h3>
+      <p>Mapping how work gets done, removing bottlenecks and designing processes that scale with the business.</p>
+    </article>
+    <article class="card">
+      <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+      <h3>Financial Planning &amp; Advisory</h3>
+      <p>Budgeting, forecasting and financial reporting that give management the numbers they need to decide with confidence.</p>
+    </article>
+    <article class="card">
+      <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+      <h3>Business Set-up &amp; Structuring</h3>
+      <p>Support for new ventures and restructurings — from organisational design to the practical steps of getting started.</p>
+    </article>
+    <article class="card">
+      <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v12H3zM8 20h8M12 16v4"/></svg></div>
+      <h3>Systems &amp; Digital Solutions</h3>
+      <p>Choosing and implementing the tools and systems that automate routine work and connect your data.</p>
+    </article>
+    <article class="card">
+      <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
+      <h3>Project &amp; Change Management</h3>
+      <p>Hands-on delivery of improvement projects, keeping people, timelines and outcomes aligned from start to finish.</p>
+    </article>
+  </div>
+</section>
+
+<section id="approach" class="band">
+  <div class="container section">
+    <div class="section-head">
+      <span class="eyebrow">How we work</span>
+      <h2>A clear, four-step approach</h2>
+    </div>
+    <ol class="steps">
+      <li><span class="step-num">01</span><h3>Understand</h3><p>We listen first — learning your business, its people and the challenge in front of you.</p></li>
+      <li><span class="step-num">02</span><h3>Diagnose</h3><p>We analyse the facts to pinpoint root causes and the opportunities with the greatest impact.</p></li>
+      <li><span class="step-num">03</span><h3>Design</h3><p>We build tailored, practical recommendations with a clear plan, owners and milestones.</p></li>
+      <li><span class="step-num">04</span><h3>Deliver</h3><p>We support implementation and track results, so the change sticks.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="about" class="container section about">
+  <div class="about-text">
+    <span class="eyebrow">About us</span>
+    <h2 class="h2">Practical advice. Lasting results.</h2>
+    <p class="lead">IM Blue Wave Solutions Ltd provides business solutions and business consulting to companies at every stage — from start-ups setting up for growth to established firms looking to work smarter.</p>
+    <p class="lead">We take time to understand how your business really runs, then recommend changes that are realistic to adopt and measurable once in place. Based in Nicosia, Cyprus, we work with businesses in Cyprus and abroad, bringing local knowledge and an international outlook to every engagement.</p>
+  </div>
+  <ul class="values">
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A56C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Tailored, not templated</strong><span>Solutions shaped to your business, not borrowed from a playbook.</span></div></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A56C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Straight talk</strong><span>Clear, honest advice in plain language.</span></div></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A56C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Focused on implementation</strong><span>Recommendations designed to be put into practice.</span></div></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A56C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Confidential &amp; professional</strong><span>Your information is handled with discretion at every step.</span></div></li>
+  </ul>
+</section>
+
+<section class="container">
+  <div class="cta">
+    <div>
+      <h2>Have a challenge in mind?</h2>
+      <p>Tell us where your business is today and where you want it to be. We'll come back with how we can help.</p>
+    </div>
+    <a href="#contact" class="btn btn-light">Start the conversation</a>
+  </div>
+</section>
+
+<section id="contact" class="container section contact">
+  <div class="contact-info">
+    <span class="eyebrow">Contact</span>
+    <h2 class="h2">Let's talk</h2>
+    <p class="lead">Send us a message and we'll reply within one business day.</p>
+    <dl class="contact-list">
+      <dt>Email</dt><dd><a href="mailto:imbluewavesolutions@gmail.com">imbluewavesolutions@gmail.com</a></dd>
+      <dt>Office</dt><dd>Agiou Dimitrianou, Nicosia, Cyprus</dd>
+    </dl>
+  </div>
+  <div class="form-card">
+    <div id="thanks" class="thanks" role="status" hidden>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A56C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M16 9l-5.5 6L8 12.5"/></svg>
+      <h3>Thank you, <span id="thanks-name">there</span>.</h3>
+      <p>Your message has been received. We'll be in touch shortly.</p>
+      <button type="button" id="reset-form" class="btn-outline">Send another message</button>
+    </div>
+    <form id="contact-form" class="contact-form">
+      <label>Full name<input name="name" type="text" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Company<input name="company" type="text" autocomplete="organization"></label>
+      <label>Area of interest
+        <select name="topic">
+          <option>Business strategy</option>
+          <option>Operations &amp; processes</option>
+          <option>Financial planning</option>
+          <option>Business set-up</option>
+          <option>Systems &amp; digital</option>
+          <option>Project delivery</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label class="full">How can we help?<textarea name="message" rows="5" required></textarea></label>
+      <div class="full form-foot">
+        <span>We use your details only to respond to your enquiry.</span>
+        <button type="submit" class="btn-primary">Send message</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <strong>IM Blue Wave Solutions Ltd</strong>
+      <span>Business solutions &amp; business consulting.</span>
+      <span>Company reg. no. HE475452 · Nicosia, Cyprus</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="copyright">© <span id="year"></span> IM Blue Wave Solutions Ltd. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var form = document.getElementById('contact-form');
+  var thanks = document.getElementById('thanks');
+  var thanksName = document.getElementById('thanks-name');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    // NOTE: connect this to an email service or backend to actually deliver messages.
+    var name = (form.elements.name.value || '').trim();
+    thanksName.textContent = name ? name.split(/\s+/)[0] : 'there';
+    form.hidden = true;
+    thanks.hidden = false;
+    form.reset();
+  });
+
+  document.getElementById('reset-form').addEventListener('click', function () {
+    thanks.hidden = true;
+    form.hidden = false;
+    form.elements.name.focus();
+  });
+})();
+</script>
+</body>
+</html>
