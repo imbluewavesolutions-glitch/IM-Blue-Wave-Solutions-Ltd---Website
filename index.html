@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IM Blue Wave Solutions Ltd — Business Solutions &amp; Consulting</title>
 <meta name="description" content="IM Blue Wave Solutions Ltd provides business solutions and business consulting from Nicosia, Cyprus.">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -33,11 +34,10 @@ a{color:var(--blue)}a:hover{color:var(--navy)}
 
 /* Header */
 .site-header{background:var(--white);border-bottom:1px solid var(--line)}
-.header-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.header-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
-.brand-text{display:flex;flex-direction:column;line-height:1.15}
-.brand-name{font-family:Sora,sans-serif;font-weight:700;font-size:18px}
-.brand-sub{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.brand-logo{display:block;height:72px;width:auto}
+@media (max-width:600px){.brand-logo{height:60px}}
 .main-nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;font-weight:500}
 .main-nav a{text-decoration:none;color:var(--ink);padding:10px 0}
 .main-nav a:hover{color:var(--blue)}
@@ -128,8 +128,7 @@ a{color:var(--blue)}a:hover{color:var(--navy)}
 <header class="site-header">
   <div class="container header-inner">
     <a href="#top" class="brand">
-      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0B2545"/><path d="M7 24c4-6 8-6 12 0s8 6 14 0" fill="none" stroke="#5FB4FF" stroke-width="3" stroke-linecap="round"/><path d="M7 17c4-6 8-6 12 0s8 6 14 0" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/></svg>
-      <span class="brand-text"><span class="brand-name">IM Blue Wave</span><span class="brand-sub">Solutions Ltd</span></span>
+      <img src="logo.png" alt="IM Blue Wave Solutions Ltd" class="brand-logo" width="256" height="160">
     </a>
     <nav class="main-nav" aria-label="Main">
       <a href="#services">Services</a>
